@@ -137,16 +137,27 @@
 
                 <!-- Project 1: RevenU -->
                 <article class="project-card" data-reveal>
-                    <div class="project-screenshot">
-                        <!-- Replace with: <img src="assets/screenshots/dashboard.png" alt="RevenU Dashboard"> -->
-                        <div class="screenshot-placeholder">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
-                            <span>Screenshot coming soon</span>
+                    <div class="project-gallery">
+                        <div class="project-scroll" id="gallery-1">
+                            <img src="assets/screenshots/auditor/img01.png" alt="Margin Synapse Dashboard" data-full="assets/screenshots/auditor/img01.png">
+                            <img src="assets/screenshots/auditor/img02.png" alt="Deal Audit Panel" data-full="assets/screenshots/auditor/img02.png">
+                            <img src="assets/screenshots/auditor/img03.png" alt="Dashboard Overview" data-full="assets/screenshots/auditor/img03.png">
+                            <img src="assets/screenshots/auditor/img04.png" alt="SKU Inventory" data-full="assets/screenshots/auditor/img04.png">
+                            <img src="assets/screenshots/auditor/img05.png" alt="FX Treasury" data-full="assets/screenshots/auditor/img05.png">
+                            <img src="assets/screenshots/auditor/img06.png" alt="CFO Inbox" data-full="assets/screenshots/auditor/img06.png">
+                            <img src="assets/screenshots/auditor/img07.png" alt="Deal Intelligence" data-full="assets/screenshots/auditor/img07.png">
+                            <img src="assets/screenshots/auditor/img08.png" alt="Margin Leakage" data-full="assets/screenshots/auditor/img08.png">
+                            <img src="assets/screenshots/auditor/img09.png" alt="3-Way Match" data-full="assets/screenshots/auditor/img09.png">
+                            <img src="assets/screenshots/auditor/img10.png" alt="Reports" data-full="assets/screenshots/auditor/img10.png">
+                            <img src="assets/screenshots/auditor/img11.png" alt="Ledger" data-full="assets/screenshots/auditor/img11.png">
+                            <img src="assets/screenshots/auditor/img12.png" alt="Sandbox Simulator" data-full="assets/screenshots/auditor/img12.png">
+                            <img src="assets/screenshots/auditor/img13.png" alt="Risk Analysis" data-full="assets/screenshots/auditor/img13.png">
                         </div>
                         <div class="project-metric">
                             <span class="metric-value" data-count="93" data-suffix="%">93%</span>
                             <span class="metric-label">auto-match rate</span>
                         </div>
+                        <div class="scroll-hint">Scroll to explore &rarr;</div>
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">RevenU &mdash; Deal Lifecycle &amp; Profitability Platform</h3>
@@ -176,11 +187,7 @@
 
                 <!-- Project 2: Margin Recon Engine -->
                 <article class="project-card" data-reveal>
-                    <div class="project-screenshot">
-                        <div class="screenshot-placeholder">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
-                            <span>Screenshot coming soon</span>
-                        </div>
+                    <div class="project-banner">
                         <div class="project-metric">
                             <span class="metric-value" data-count="500" data-suffix="K">500K</span>
                             <span class="metric-label">rows stress tested</span>
@@ -407,6 +414,16 @@
             <p class="footer-text">&copy; 2026 Ranjith Prasath M V. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- ══ LIGHTBOX ═══════════════════════════════════════════ -->
+    <div class="lightbox" id="lightbox" hidden>
+        <div class="lightbox-backdrop"></div>
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+        <img class="lightbox-img" src="" alt="">
+        <button class="lightbox-next" aria-label="Next">&#8250;</button>
+        <p class="lightbox-caption"></p>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
