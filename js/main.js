@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════
    Ranjith Prasath M V — Portfolio
-   main.js — Navigation, scroll reveal, active section highlighting
+   main.js — Typing, counters, nav, scroll reveal, form
    ═══════════════════════════════════════════════════════════════ */
 
 (function () {
@@ -29,9 +29,11 @@
 
     function updateNavBg() {
         if (window.scrollY > 30) {
-            navbar.style.background = 'rgba(10, 14, 20, 0.95)';
+            navbar.style.background = 'rgba(248, 249, 251, 0.97)';
+            navbar.style.boxShadow = '0 2px 12px rgba(0, 0, 0, 0.04)';
         } else {
-            navbar.style.background = 'rgba(10, 14, 20, 0.85)';
+            navbar.style.background = 'rgba(248, 249, 251, 0.85)';
+            navbar.style.boxShadow = 'none';
         }
     }
 
@@ -82,6 +84,105 @@
 
     revealElements.forEach(function (el) {
         revealObserver.observe(el);
+    });
+
+    /* ── Typing animation in hero ────────────────────────────── */
+    var typedEl = document.querySelector('.typed-text');
+    var linesEl = document.querySelector('.hero-typed-lines');
+    var ctaEl = document.querySelector('.hero-cta');
+    var linksEl = document.querySelector('.hero-links');
+
+    if (typedEl && linesEl) {
+        // Parse the hidden lines into segments
+        var fullText = linesEl.textContent.trim();
+        // Split into base + highlight parts
+        // Full text: "Master's student ... — focused on financial risk, regulatory reporting, and reconciliation analytics."
+        var parts = [
+            { text: "Master's student in Data Science at UCLouvain", highlight: false },
+            { text: " — focused on ", highlight: false },
+            { text: "financial risk", highlight: true },
+            { text: ", ", highlight: false },
+            { text: "regulatory reporting", highlight: true },
+            { text: ", and ", highlight: false },
+            { text: "reconciliation analytics", highlight: true }
+        ];
+
+        var charIndex = 0;
+        var partIndex = 0;
+        var typedHTML = '';
+        var typeSpeed = 28;
+        var startDelay = 400;
+
+        function typeNext() {
+            if (partIndex >= parts.length) {
+                // Done typing — reveal CTA and links
+                if (ctaEl) ctaEl.classList.add('visible');
+                if (linksEl) linksEl.classList.add('visible');
+                return;
+            }
+
+            var part = parts[partIndex];
+            if (charIndex < part.text.length) {
+                var char = part.text[charIndex];
+                if (part.highlight) {
+                    // We need to track open/close spans
+                    if (charIndex === 0) {
+                        typedHTML += '<span class="accent">';
+                    }
+                    typedHTML += char;
+                    if (charIndex === part.text.length - 1) {
+                        typedHTML += '</span>';
+                    }
+                } else {
+                    typedHTML += char;
+                }
+                typedEl.innerHTML = typedHTML;
+                charIndex++;
+                setTimeout(typeNext, typeSpeed);
+            } else {
+                partIndex++;
+                charIndex = 0;
+                setTimeout(typeNext, typeSpeed / 2);
+            }
+        }
+
+        setTimeout(typeNext, startDelay);
+    }
+
+    /* ── Animated counters ────────────────────────────────────── */
+    var counters = document.querySelectorAll('[data-count]');
+
+    var counterObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                var el = entry.target;
+                var target = parseInt(el.getAttribute('data-count'), 10);
+                var suffix = el.getAttribute('data-suffix') || '';
+                var duration = 1600;
+                var startTime = null;
+
+                function animate(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    var progress = Math.min((currentTime - startTime) / duration, 1);
+                    // Ease-out cubic
+                    var eased = 1 - Math.pow(1 - progress, 3);
+                    var value = Math.round(eased * target);
+                    el.textContent = value + suffix;
+                    if (progress < 1) {
+                        requestAnimationFrame(animate);
+                    } else {
+                        el.textContent = target + suffix;
+                    }
+                }
+
+                requestAnimationFrame(animate);
+                counterObserver.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(function (counter) {
+        counterObserver.observe(counter);
     });
 
     /* ── Contact form enhancement ─────────────────────────────── */
