@@ -147,6 +147,26 @@ img { max-width: 100%; display: block; }
     font-weight: 600;
 }
 
+/* ── Resume Download Button ──────────────────────────────────── */
+.btn-resume {
+    background: var(--surface);
+    color: var(--accent-light);
+    border: 1px solid var(--accent-light);
+    gap: 8px;
+}
+
+.btn-resume:hover {
+    background: var(--accent-light);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px var(--accent-glow);
+}
+
+.contact-resume-btn {
+    margin-top: 16px;
+    width: fit-content;
+}
+
 /* ══ NAVBAR ══════════════════════════════════════════════════════ */
 #navbar {
     position: fixed;
