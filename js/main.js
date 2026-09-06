@@ -93,15 +93,15 @@
     var linksEl = document.querySelector('.hero-links');
 
     if (typedEl && linesEl) {
-        var parts = [
-            { text: "Master's student in Data Science at UCLouvain", highlight: false },
-            { text: " — focused on ", highlight: false },
-            { text: "financial risk", highlight: true },
-            { text: ", ", highlight: false },
-            { text: "regulatory reporting", highlight: true },
-            { text: ", and ", highlight: false },
-            { text: "reconciliation analytics", highlight: true }
-        ];
+    var parts = [
+        { text: "Master's student in Data Science at UCLouvain", highlight: false },
+        { text: " — interested in ", highlight: false },
+        { text: "data systems", highlight: true },
+        { text: ", ", highlight: false },
+        { text: "Generative AI", highlight: true },
+        { text: ", and ", highlight: false },
+        { text: "sustainable computing", highlight: true }
+    ];
 
         var charIndex = 0;
         var partIndex = 0;
