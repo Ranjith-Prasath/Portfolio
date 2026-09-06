@@ -1,438 +1,1993 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ranjith Prasath M V — Master's student in Data Science at UCLouvain, focused on financial risk, regulatory reporting, and reconciliation analytics.">
-    <title>Ranjith Prasath M V — Finance & Risk Analytics</title>
+
+    <meta
+        name="description"
+        content="Ranjith Prasath M V — Master's student in Data Science at UCLouvain interested in applied AI, data systems, Generative AI and sustainable computing."
+    >
+
+    <meta
+        name="keywords"
+        content="Ranjith Prasath, Data Science, UCLouvain, Python, AI, Generative AI, RAG, ChromaDB, Sustainable AI, Data Engineering, Docker"
+    >
+
+    <meta name="author" content="Ranjith Prasath M V">
+
+    <title>
+        Ranjith Prasath M V — Data Science, GenAI & Sustainable Computing
+    </title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 <body>
 
-    <!-- ============ NAV BAR ============ -->
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
     <nav id="navbar">
+
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">RP</a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+
+            <a href="#hero" class="nav-logo">
+                RP
+            </a>
+
+
+            <button
+                class="hamburger"
+                id="hamburger"
+                aria-label="Toggle menu"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+
+
             <ul class="nav-links" id="nav-links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+
+                <li>
+                    <a href="#about" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#research" class="nav-link">
+                        Research
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#experience" class="nav-link">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="nav-link">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#contact"
+                        class="nav-link nav-cta"
+                    >
+                        Contact
+                    </a>
+                </li>
+
             </ul>
+
         </div>
+
     </nav>
 
-    <!-- ============ HERO ============ -->
+
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
     <section id="hero" class="hero">
+
         <div class="hero-bg"></div>
+
+
         <div class="hero-content">
-            <h1 class="hero-name">Ranjith Prasath M V</h1>
+
+            <h1 class="hero-name">
+                Ranjith Prasath M V
+            </h1>
+
+
             <p class="hero-tagline">
-                <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                <span class="typed-text"></span>
+                <span class="cursor">&nbsp;</span>
             </p>
+
+
             <div class="hero-typed-lines" hidden>
-                Master's student in Data Science at UCLouvain — focused on financial risk, regulatory reporting, and reconciliation analytics.
+                Master's student in Data Science at UCLouvain — exploring applied AI, data systems, Generative AI and sustainable computing.
             </div>
+
+
             <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                <a href="assets/Ranjith_Resume.pdf" download class="btn btn-resume">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+
+                <a
+                    href="#projects"
+                    class="btn btn-primary"
+                >
+                    View Projects
+                </a>
+
+
+                <a
+                    href="#research"
+                    class="btn btn-secondary"
+                >
+                    View Research
+                </a>
+
+
+                <a
+                    href="assets/Ranjith_Resume.pdf"
+                    download
+                    class="btn btn-resume"
+                >
+
+                    <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                        <path d="M7 10l5 5 5-5"/>
+                        <path d="M12 15V3"/>
+                    </svg>
+
                     Download Resume
+
                 </a>
+
             </div>
+
+
             <div class="hero-links">
-                <a href="https://github.com/Ranjith-Prasath/revenU" target="_blank" rel="noopener" aria-label="GitHub">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+
+                <!-- GitHub -->
+                <a
+                    href="https://github.com/Ranjith-Prasath"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                >
+
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                    >
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+
                 </a>
-                <a href="https://linkedin.com/in/ranjithprasath" target="_blank" rel="noopener" aria-label="LinkedIn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+
+
+                <!-- LinkedIn -->
+                <a
+                    href="https://linkedin.com/in/ranjithprasath"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                >
+
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                    >
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                    </svg>
+
                 </a>
+
             </div>
+
         </div>
-        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+
+
+        <a
+            href="#about"
+            class="scroll-indicator"
+            aria-label="Scroll down"
+        >
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+            >
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
         </a>
+
     </section>
 
-    <!-- ============ ABOUT ============ -->
+
+
+    <!-- =========================================================
+         ABOUT
+    ========================================================== -->
+
     <section id="about" class="section">
+
         <div class="container">
+
             <h2 class="section-title">
-                <span class="section-num">01</span>
-                <span>About</span>
+
+                <span class="section-num">
+                    01
+                </span>
+
+                <span>
+                    About
+                </span>
+
             </h2>
+
+
             <div class="about-grid">
+
+
                 <div class="about-text">
+
                     <p>
-                        Finance and risk-analytics enthusiast pursuing a Master's in Data Science at
-                        <span class="accent">UCLouvain</span>. My interest lies at the intersection of
-                        financial regulation, risk analysis, and compliance technology &mdash; not pure
-                        software engineering.
+                        I'm a Master's student in Data Science at
+                        <span class="accent">UCLouvain</span>,
+                        with a background in Computer Science and a growing
+                        interest in applied AI, data systems, automation
+                        and sustainable computing.
                     </p>
+
+
                     <p>
-                        I built a reconciliation and deal-lifecycle analytics platform covering
-                        10 financial domains with 55+ matching algorithms. I used AI tools to accelerate
-                        development, but the process taught me how reconciliation workflows, margin
-                        leakage detection, and internal controls actually work in practice.
+                        Most of my hands-on experience comes from building
+                        <span class="accent">RevenU</span>,
+                        a financial analytics and reconciliation platform
+                        using Python, PostgreSQL, Flask, Docker and
+                        data-processing pipelines.
+                        Although the application is built around financial
+                        data, the project gave me practical exposure to
+                        backend workflows, databases, APIs, reconciliation
+                        algorithms, testing and data-intensive systems.
                     </p>
+
+
                     <p>
-                        I'm actively studying EU regulatory frameworks &mdash; PRIIPs, SFDR, AIFMD &mdash;
-                        and I hold certifications in Forensic Accounting and Financial Accounting.
-                        I'm not an expert yet, but I'm putting in the hours to get there.
+                        Within RevenU, I have also experimented with
+                        Generative AI components including
+                        <span class="accent">
+                            RAG, ChromaDB-based retrieval,
+                            LLM-assisted parsing and basic LLM-driven workflows.
+                        </span>
+                        I am now building on that foundation while learning
+                        more about AI engineering, LLM systems and
+                        infrastructure.
                     </p>
+
+
+                    <p>
+                        My Master's thesis focuses on the environmental impacts
+                        of different Generative AI user profiles.
+                        I am particularly interested in understanding how
+                        AI usage translates into computational workloads,
+                        energy demand, water consumption and broader
+                        environmental impacts.
+                    </p>
+
                 </div>
+
+
 
                 <div class="quick-facts">
+
+
+                    <!-- Education -->
                     <div class="fact-card">
+
                         <div class="fact-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+
                         </div>
-                        <div class="fact-label">Education</div>
-                        <div class="fact-value">M.Sc. Data Science<br>UCLouvain</div>
+
+                        <div class="fact-label">
+                            Education
+                        </div>
+
+                        <div class="fact-value">
+                            M.Sc. Data Science<br>
+                            UCLouvain
+                        </div>
+
                     </div>
+
+
+
+                    <!-- Research -->
                     <div class="fact-card">
+
                         <div class="fact-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.39 0 4.68.94 6.36 2.64"/></svg>
+
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M8 12h8M12 8v8"/>
+                            </svg>
+
                         </div>
-                        <div class="fact-label">Certified</div>
-                        <div class="fact-value">Forensic Accounting<br>Financial Accounting</div>
+
+                        <div class="fact-label">
+                            Research
+                        </div>
+
+                        <div class="fact-value">
+                            Sustainable GenAI<br>
+                            Master's Thesis
+                        </div>
+
                     </div>
+
+
+
+                    <!-- Experience -->
                     <div class="fact-card">
+
                         <div class="fact-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-4V5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path d="M20 7h-4V5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/>
+                            </svg>
+
                         </div>
-                        <div class="fact-label">Experience</div>
-                        <div class="fact-value">17 months<br>2 internships</div>
+
+                        <div class="fact-label">
+                            Experience
+                        </div>
+
+                        <div class="fact-value">
+                            2 Internships<br>
+                            Project-driven
+                        </div>
+
                     </div>
+
+
+
+                    <!-- Location -->
                     <div class="fact-card">
+
                         <div class="fact-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 4 6 4 10c0 4 2 6 4 8 1 1 1.5 2 1.5 3.5"/><path d="M12 2c4 0 8 4 8 8 0 4-2 6-4 8-1 1-1.5 2-1.5 3.5"/><circle cx="12" cy="12" r="2"/></svg>
+
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path d="M12 2C8 2 4 6 4 10c0 4 2 6 4 8 1 1 1.5 2 1.5 3.5"/>
+                                <path d="M12 2c4 0 8 4 8 8 0 4-2 6-4 8-1 1-1.5 2-1.5 3.5"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+
                         </div>
-                        <div class="fact-label">Location</div>
-                        <div class="fact-value">Louvain-la-Neuve<br>Belgium</div>
+
+                        <div class="fact-label">
+                            Location
+                        </div>
+
+                        <div class="fact-value">
+                            Louvain-la-Neuve<br>
+                            Belgium
+                        </div>
+
                     </div>
+
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- ============ PROJECTS ============ -->
-    <section id="projects" class="section section-alt">
+
+
+    <!-- =========================================================
+         RESEARCH
+    ========================================================== -->
+
+    <section
+        id="research"
+        class="section section-alt"
+    >
+
         <div class="container">
+
+
             <h2 class="section-title">
-                <span class="section-num">02</span>
-                <span>Projects</span>
+
+                <span class="section-num">
+                    02
+                </span>
+
+                <span>
+                    Research
+                </span>
+
             </h2>
+
+
+
+            <article class="project-card" data-reveal>
+
+
+                <div class="project-body">
+
+
+                    <h3 class="project-title">
+                        Master's Thesis — Environmental Impact of Generative AI
+                    </h3>
+
+
+                    <p class="project-desc">
+                        Evaluation of the environmental impacts of different
+                        Generative AI user profiles.
+                    </p>
+
+
+                    <ul class="project-points">
+
+                        <li>
+                            Investigating how different patterns of GenAI usage
+                            translate into computational workloads and
+                            environmental impacts.
+                        </li>
+
+
+                        <li>
+                            Studying indicators including greenhouse-gas impact,
+                            primary energy demand, water use and resource
+                            consumption.
+                        </li>
+
+
+                        <li>
+                            Exploring the connections between LLM inference,
+                            workload characteristics, computing infrastructure
+                            and environmental efficiency.
+                        </li>
+
+
+                        <li>
+                            Examining how different GenAI user behaviours —
+                            from occasional conversational use to more intensive
+                            workflows — may change environmental impact at scale.
+                        </li>
+
+                    </ul>
+
+
+                    <div class="tech-badges">
+
+                        <span class="badge">
+                            Generative AI
+                        </span>
+
+                        <span class="badge">
+                            Sustainable AI
+                        </span>
+
+                        <span class="badge">
+                            LLM Inference
+                        </span>
+
+                        <span class="badge">
+                            AI Infrastructure
+                        </span>
+
+                        <span class="badge">
+                            Environmental Impact
+                        </span>
+
+                        <span class="badge">
+                            LCA
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         PROJECTS
+    ========================================================== -->
+
+    <section
+        id="projects"
+        class="section"
+    >
+
+        <div class="container">
+
+
+            <h2 class="section-title">
+
+                <span class="section-num">
+                    03
+                </span>
+
+                <span>
+                    Projects
+                </span>
+
+            </h2>
+
+
+
             <div class="projects-grid">
 
-                <!-- Project 1: RevenU -->
+
+                <!-- =====================================================
+                     PROJECT 1 — REVENU
+                ====================================================== -->
+
                 <article class="project-card" data-reveal>
+
+
                     <div class="project-gallery">
-                        <div class="project-scroll" id="gallery-1">
-                            <img src="assets/screenshots/auditor/img01.png" alt="Margin Synapse Dashboard" data-full="assets/screenshots/auditor/img01.png">
-                            <img src="assets/screenshots/auditor/img02.png" alt="Deal Audit Panel" data-full="assets/screenshots/auditor/img02.png">
-                            <img src="assets/screenshots/auditor/img03.png" alt="Dashboard Overview" data-full="assets/screenshots/auditor/img03.png">
-                            <img src="assets/screenshots/auditor/img04.png" alt="SKU Inventory" data-full="assets/screenshots/auditor/img04.png">
-                            <img src="assets/screenshots/auditor/img05.png" alt="FX Treasury" data-full="assets/screenshots/auditor/img05.png">
-                            <img src="assets/screenshots/auditor/img06.png" alt="CFO Inbox" data-full="assets/screenshots/auditor/img06.png">
-                            <img src="assets/screenshots/auditor/img07.png" alt="Deal Intelligence" data-full="assets/screenshots/auditor/img07.png">
-                            <img src="assets/screenshots/auditor/img08.png" alt="Margin Leakage" data-full="assets/screenshots/auditor/img08.png">
-                            <img src="assets/screenshots/auditor/img09.png" alt="3-Way Match" data-full="assets/screenshots/auditor/img09.png">
-                            <img src="assets/screenshots/auditor/img10.png" alt="Reports" data-full="assets/screenshots/auditor/img10.png">
-                            <img src="assets/screenshots/auditor/img11.png" alt="Ledger" data-full="assets/screenshots/auditor/img11.png">
-                            <img src="assets/screenshots/auditor/img12.png" alt="Sandbox Simulator" data-full="assets/screenshots/auditor/img12.png">
-                            <img src="assets/screenshots/auditor/img13.png" alt="Risk Analysis" data-full="assets/screenshots/auditor/img13.png">
+
+                        <div
+                            class="project-scroll"
+                            id="gallery-1"
+                        >
+
+                            <img
+                                src="assets/screenshots/auditor/img01.png"
+                                alt="Margin Synapse Dashboard"
+                                data-full="assets/screenshots/auditor/img01.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img02.png"
+                                alt="Deal Audit Panel"
+                                data-full="assets/screenshots/auditor/img02.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img03.png"
+                                alt="Dashboard Overview"
+                                data-full="assets/screenshots/auditor/img03.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img04.png"
+                                alt="SKU Inventory"
+                                data-full="assets/screenshots/auditor/img04.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img05.png"
+                                alt="FX Treasury"
+                                data-full="assets/screenshots/auditor/img05.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img06.png"
+                                alt="CFO Inbox"
+                                data-full="assets/screenshots/auditor/img06.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img07.png"
+                                alt="Deal Intelligence"
+                                data-full="assets/screenshots/auditor/img07.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img08.png"
+                                alt="Margin Leakage"
+                                data-full="assets/screenshots/auditor/img08.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img09.png"
+                                alt="Three Way Match"
+                                data-full="assets/screenshots/auditor/img09.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img10.png"
+                                alt="Reports"
+                                data-full="assets/screenshots/auditor/img10.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img11.png"
+                                alt="Ledger"
+                                data-full="assets/screenshots/auditor/img11.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img12.png"
+                                alt="Sandbox Simulator"
+                                data-full="assets/screenshots/auditor/img12.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/auditor/img13.png"
+                                alt="Risk Analysis"
+                                data-full="assets/screenshots/auditor/img13.png"
+                            >
+
                         </div>
+
+
+
                         <div class="project-metric">
-                            <span class="metric-value" data-count="93" data-suffix="%">93%</span>
-                            <span class="metric-label">auto-match rate</span>
+
+                            <span
+                                class="metric-value"
+                                data-count="93"
+                                data-suffix="%"
+                            >
+                                93%
+                            </span>
+
+                            <span class="metric-label">
+                                auto-match rate
+                            </span>
+
                         </div>
-                        <div class="scroll-hint">Scroll to explore &rarr;</div>
+
+
+
+                        <div class="scroll-hint">
+                            Scroll to explore &rarr;
+                        </div>
+
                     </div>
+
+
+
                     <div class="project-body">
-                        <h3 class="project-title">RevenU &mdash; Deal Lifecycle &amp; Profitability Platform</h3>
-                        <a href="https://github.com/Ranjith-Prasath/revenU" target="_blank" rel="noopener" class="project-link">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+
+
+                        <h3 class="project-title">
+                            RevenU — Data-Intensive Financial Analytics Platform
+                        </h3>
+
+
+                        <a
+                            href="https://github.com/Ranjith-Prasath/revenU"
+                            target="_blank"
+                            rel="noopener"
+                            class="project-link"
+                        >
+
+                            <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+
                             github.com/Ranjith-Prasath/revenU
+
                         </a>
+
+
+
                         <p class="project-desc">
-                            End-to-end financial analytics platform tracking deals from quote to payment
-                            &mdash; revenue, cost, margin erosion, FX exposure, and transfer pricing.
+                            Full-stack analytics and reconciliation platform
+                            combining data ingestion, rule-based processing,
+                            financial analytics, backend APIs and experimental
+                            Generative AI components across multiple enterprise
+                            data domains.
                         </p>
+
+
+
                         <ul class="project-points">
-                            <li>Engineered real-time margin-leakage detection across SKUs and customers, surfacing profit-recovery opportunities for finance controllers</li>
-                            <li>Delivered automated P&amp;L-style reporting, audit trails, and CFO dashboards for FP&amp;A decisions</li>
-                            <li>Applied Monte Carlo simulation and cost-of-inaction modelling to quantify financial risk</li>
+
+                            <li>
+                                Built backend workflows using Python, Flask,
+                                PostgreSQL and SQLAlchemy to process and analyse
+                                multi-domain financial data.
+                            </li>
+
+
+                            <li>
+                                Developed rule-based and fuzzy-matching
+                                reconciliation pipelines with confidence
+                                scoring, exception handling and audit trails.
+                            </li>
+
+
+                            <li>
+                                Integrated experimental GenAI components
+                                including ChromaDB-backed RAG,
+                                LLM-assisted parsing and LLM-generated
+                                explanations and action suggestions.
+                            </li>
+
+
+                            <li>
+                                Used Docker and supporting services to connect
+                                backend processing, databases and
+                                frontend analytics workflows.
+                            </li>
+
                         </ul>
+
+
+
                         <div class="tech-badges">
-                            <span class="badge">Python</span>
-                            <span class="badge">Flask</span>
-                            <span class="badge">React</span>
-                            <span class="badge">PostgreSQL</span>
-                            <span class="badge">Docker</span>
-                            <span class="badge">TypeScript</span>
+
+                            <span class="badge">
+                                Python
+                            </span>
+
+                            <span class="badge">
+                                Flask
+                            </span>
+
+                            <span class="badge">
+                                PostgreSQL
+                            </span>
+
+                            <span class="badge">
+                                Docker
+                            </span>
+
+                            <span class="badge">
+                                RAG
+                            </span>
+
+                            <span class="badge">
+                                ChromaDB
+                            </span>
+
+                            <span class="badge">
+                                LLM APIs
+                            </span>
+
+                            <span class="badge">
+                                React
+                            </span>
+
                         </div>
+
+
                     </div>
+
                 </article>
 
-                <!-- Project 2: Margin Recon Engine -->
+
+
+                <!-- =====================================================
+                     PROJECT 2 — RECON ENGINE
+                ====================================================== -->
+
                 <article class="project-card" data-reveal>
+
+
                     <div class="project-gallery">
-                        <div class="project-scroll" id="gallery-2">
-                            <img src="assets/screenshots/recon-engine/Screenshot 2026-07-27 015229.png" alt="Recon Engine Dashboard" data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 015229.png">
-                            <img src="assets/screenshots/recon-engine/Screenshot 2026-07-27 015242.png" alt="Match Rules Configuration" data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 015242.png">
-                            <img src="assets/screenshots/recon-engine/Screenshot 2026-07-27 164124.png" alt="Exception Review Workflow" data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 164124.png">
-                            <img src="assets/screenshots/recon-engine/Screenshot 2026-07-27 164139.png" alt="Reconciliation Results" data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 164139.png">
-                            <img src="assets/screenshots/recon-engine/Screenshot 2026-07-27 185613.png" alt="Stress Test Analysis" data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 185613.png">
+
+
+                        <div
+                            class="project-scroll"
+                            id="gallery-2"
+                        >
+
+                            <img
+                                src="assets/screenshots/recon-engine/Screenshot 2026-07-27 015229.png"
+                                alt="Reconciliation Engine Dashboard"
+                                data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 015229.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/recon-engine/Screenshot 2026-07-27 015242.png"
+                                alt="Match Rules Configuration"
+                                data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 015242.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/recon-engine/Screenshot 2026-07-27 164124.png"
+                                alt="Exception Review Workflow"
+                                data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 164124.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/recon-engine/Screenshot 2026-07-27 164139.png"
+                                alt="Reconciliation Results"
+                                data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 164139.png"
+                            >
+
+                            <img
+                                src="assets/screenshots/recon-engine/Screenshot 2026-07-27 185613.png"
+                                alt="Stress Test Analysis"
+                                data-full="assets/screenshots/recon-engine/Screenshot 2026-07-27 185613.png"
+                            >
+
                         </div>
+
+
+
                         <div class="project-metric">
-                            <span class="metric-value" data-count="500" data-suffix="K">500K</span>
-                            <span class="metric-label">rows stress tested</span>
+
+                            <span
+                                class="metric-value"
+                                data-count="500"
+                                data-suffix="K"
+                            >
+                                500K
+                            </span>
+
+                            <span class="metric-label">
+                                rows stress tested
+                            </span>
+
                         </div>
-                        <div class="scroll-hint">Scroll to explore &rarr;</div>
+
+
+
+                        <div class="scroll-hint">
+                            Scroll to explore &rarr;
+                        </div>
+
+
                     </div>
+
+
+
                     <div class="project-body">
-                        <h3 class="project-title">Margin Recon Engine &mdash; Enterprise Reconciliation</h3>
-                        <a href="https://github.com/Ranjith-Prasath/revenU" target="_blank" rel="noopener" class="project-link">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+
+
+                        <h3 class="project-title">
+                            Margin Recon Engine — Large-Scale Data Reconciliation System
+                        </h3>
+
+
+                        <a
+                            href="https://github.com/Ranjith-Prasath/revenU"
+                            target="_blank"
+                            rel="noopener"
+                            class="project-link"
+                        >
+
+                            <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+
                             github.com/Ranjith-Prasath/revenU
+
                         </a>
+
+
+
                         <p class="project-desc">
-                            Rule and fuzzy-matching reconciliation engine across 10 financial domains (AR,
-                            AP, Bank, GL, SO/PO, Intercompany, Tax, Treasury, Revenue, Inventory);
-                            stress-tested across 21 domain scenarios.
+                            Rule-based and fuzzy-matching data reconciliation
+                            engine spanning 10 enterprise data domains,
+                            designed to match records, identify exceptions and
+                            support structured review workflows.
                         </p>
+
+
+
                         <ul class="project-points">
-                            <li>Achieved 93% auto-match rate on 50K real invoices and 92.7% on 69K bank entries</li>
-                            <li>Managed exceptions review workflow (accept, reject, escalate, write-off) with audit trails and confidence-labelled exports</li>
-                            <li>Ran 500K-row stress tests with a Python generator; supports forecasting and loss-prevention analytics</li>
+
+                            <li>
+                                Implemented multiple matching strategies and
+                                confidence-based reconciliation workflows
+                                across heterogeneous datasets.
+                            </li>
+
+
+                            <li>
+                                Achieved approximately 93% automated matching
+                                on 50K invoice records and 92.7% on 69K
+                                banking records in test scenarios.
+                            </li>
+
+
+                            <li>
+                                Built structured exception workflows including
+                                accept, reject, escalation and write-off
+                                decisions with audit trails.
+                            </li>
+
+
+                            <li>
+                                Created synthetic-data and stress-testing
+                                pipelines for datasets reaching 500K rows.
+                            </li>
+
                         </ul>
+
+
+
                         <div class="tech-badges">
-                            <span class="badge">Python</span>
-                            <span class="badge">pandas</span>
-                            <span class="badge">AG Grid</span>
-                            <span class="badge">Redis</span>
-                            <span class="badge">Celery</span>
-                            <span class="badge">Socket.IO</span>
+
+                            <span class="badge">
+                                Python
+                            </span>
+
+                            <span class="badge">
+                                pandas
+                            </span>
+
+                            <span class="badge">
+                                PostgreSQL
+                            </span>
+
+                            <span class="badge">
+                                Redis
+                            </span>
+
+                            <span class="badge">
+                                Celery
+                            </span>
+
+                            <span class="badge">
+                                Docker
+                            </span>
+
+                            <span class="badge">
+                                Testing
+                            </span>
+
                         </div>
+
+
                     </div>
+
                 </article>
+
 
             </div>
+
         </div>
+
     </section>
 
-    <!-- ============ EXPERIENCE ============ -->
-    <section id="experience" class="section">
+
+
+    <!-- =========================================================
+         EXPERIENCE
+    ========================================================== -->
+
+    <section
+        id="experience"
+        class="section section-alt"
+    >
+
         <div class="container">
+
+
             <h2 class="section-title">
-                <span class="section-num">03</span>
-                <span>Experience</span>
+
+                <span class="section-num">
+                    04
+                </span>
+
+                <span>
+                    Experience
+                </span>
+
             </h2>
+
+
+
             <div class="timeline">
-                <div class="timeline-item" data-reveal>
+
+
+                <!-- Experience 1 -->
+                <div
+                    class="timeline-item"
+                    data-reveal
+                >
+
                     <div class="timeline-dot"></div>
+
+
                     <div class="timeline-content">
+
+
                         <div class="timeline-header">
-                            <h3 class="timeline-role">Digital Marketing Executive Intern</h3>
-                            <span class="timeline-date">Aug 2024 &mdash; Apr 2025</span>
+
+                            <h3 class="timeline-role">
+                                Digital Marketing Executive Intern
+                            </h3>
+
+                            <span class="timeline-date">
+                                Aug 2024 — Apr 2025
+                            </span>
+
                         </div>
-                        <div class="timeline-company">Virtuospark Technologies Pvt Ltd, Bengaluru, India</div>
+
+
+                        <div class="timeline-company">
+                            Virtuospark Technologies Pvt Ltd, India
+                        </div>
+
+
                         <ul class="timeline-points">
-                            <li>Built revenue and ROI dashboards in Excel tracking campaign performance across multiple channels</li>
-                            <li>Ran A/B testing to optimise budget allocation and channel mix, improving margin efficiency</li>
-                            <li>Reconciled campaign spend against budget with audit trail, ensuring accuracy across channels</li>
+
+                            <li>
+                                Built weekly and monthly analytical dashboards
+                                tracking revenue, ROI, costs and operational
+                                KPIs across multiple channels.
+                            </li>
+
+                            <li>
+                                Used A/B testing and performance analysis to
+                                support budget-allocation and efficiency
+                                decisions.
+                            </li>
+
+                            <li>
+                                Reconciled campaign expenditure and performance
+                                data while maintaining structured reporting
+                                and audit trails.
+                            </li>
+
                         </ul>
+
+
                     </div>
+
                 </div>
-                <div class="timeline-item" data-reveal>
+
+
+
+                <!-- Experience 2 -->
+                <div
+                    class="timeline-item"
+                    data-reveal
+                >
+
                     <div class="timeline-dot"></div>
+
+
                     <div class="timeline-content">
+
+
                         <div class="timeline-header">
-                            <h3 class="timeline-role">SEO Analyst Intern</h3>
-                            <span class="timeline-date">Jan 2024 &mdash; Aug 2024</span>
+
+                            <h3 class="timeline-role">
+                                SEO Analyst Intern
+                            </h3>
+
+                            <span class="timeline-date">
+                                Jan 2024 — Jul 2024
+                            </span>
+
                         </div>
-                        <div class="timeline-company">DOT Mappers IT Pvt Ltd, Bengaluru, India</div>
+
+
+                        <div class="timeline-company">
+                            DOT Mappers IT Pvt Ltd, India
+                        </div>
+
+
                         <ul class="timeline-points">
-                            <li>Analysed 700+ landing pages to identify revenue-generating content patterns</li>
-                            <li>Linked operational metrics to commercial outcomes, identifying portfolio-mix opportunities</li>
+
+                            <li>
+                                Analysed performance data across more than
+                                700 web pages to identify patterns, anomalies
+                                and optimisation opportunities.
+                            </li>
+
+                            <li>
+                                Used structured data analysis and variance
+                                comparisons to connect operational metrics
+                                with business outcomes.
+                            </li>
+
                         </ul>
+
+
                     </div>
+
                 </div>
+
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- ============ CERTIFICATIONS & SKILLS ============ -->
-    <section id="certifications" class="section section-alt">
+
+
+    <!-- =========================================================
+         SKILLS & LEARNING
+    ========================================================== -->
+
+    <section
+        id="skills"
+        class="section"
+    >
+
         <div class="container">
+
+
             <h2 class="section-title">
-                <span class="section-num">04</span>
-                <span>Certifications &amp; Skills</span>
+
+                <span class="section-num">
+                    05
+                </span>
+
+                <span>
+                    Skills &amp; Learning
+                </span>
+
             </h2>
 
-            <div class="cert-grid">
-                <div class="cert-card" data-reveal>
-                    <div class="cert-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/><path d="M8.5 8.5l2 2 4-4"/><path d="M12 15v7"/></svg>
-                    </div>
-                    <h3 class="cert-name">Forensic Accounting and Fraud Examination</h3>
-                    <p class="cert-issuer">West Virginia University (Coursera)</p>
-                    <span class="cert-date">Jul 2026</span>
-                </div>
-                <div class="cert-card" data-reveal>
-                    <div class="cert-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/><path d="M8.5 8.5l2 2 4-4"/><path d="M12 15v7"/></svg>
-                    </div>
-                    <h3 class="cert-name">Financial Accounting Fundamentals</h3>
-                    <p class="cert-issuer">University of Virginia, Darden (Coursera)</p>
-                    <span class="cert-date">Jul 2026</span>
-                </div>
-                <div class="cert-card" data-reveal>
-                    <div class="cert-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/><path d="M8.5 8.5l2 2 4-4"/><path d="M12 15v7"/></svg>
-                    </div>
-                    <h3 class="cert-name">Foundations: Data, Data, Everywhere</h3>
-                    <p class="cert-issuer">Google (Coursera)</p>
-                    <span class="cert-date">Mar 2026</span>
-                </div>
-            </div>
+
 
             <div class="skills-section">
-                <h3 class="skills-heading">Skills</h3>
-                <div class="skills-group" data-reveal>
-                    <span class="skills-label">Finance &amp; Risk</span>
+
+
+                <!-- Programming -->
+                <div
+                    class="skills-group"
+                    data-reveal
+                >
+
+                    <span class="skills-label">
+                        Programming &amp; Data
+                    </span>
+
+
                     <div class="skill-badges-row">
-                        <span class="skill-badge">Reconciliation</span>
-                        <span class="skill-badge">Forensic Accounting</span>
-                        <span class="skill-badge">Financial Accounting</span>
-                        <span class="skill-badge">Audit Trails</span>
-                        <span class="skill-badge">Variance Analysis</span>
-                        <span class="skill-badge">Data Validation</span>
+
+                        <span class="skill-badge">
+                            Python
+                        </span>
+
+                        <span class="skill-badge">
+                            SQL
+                        </span>
+
+                        <span class="skill-badge">
+                            PostgreSQL
+                        </span>
+
+                        <span class="skill-badge">
+                            pandas
+                        </span>
+
+                        <span class="skill-badge">
+                            NumPy
+                        </span>
+
+                        <span class="skill-badge">
+                            Flask
+                        </span>
+
+                        <span class="skill-badge">
+                            SQLAlchemy
+                        </span>
+
                     </div>
+
                 </div>
-                <div class="skills-group" data-reveal>
-                    <span class="skills-label">Data &amp; Technical</span>
+
+
+
+                <!-- GenAI Exposure -->
+                <div
+                    class="skills-group"
+                    data-reveal
+                >
+
+                    <span class="skills-label">
+                        GenAI Exposure
+                    </span>
+
+
                     <div class="skill-badges-row">
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">SQL</span>
-                        <span class="skill-badge">PostgreSQL</span>
-                        <span class="skill-badge">Docker</span>
-                        <span class="skill-badge">Tableau</span>
-                        <span class="skill-badge">Data Visualization</span>
+
+                        <span class="skill-badge">
+                            RAG
+                        </span>
+
+                        <span class="skill-badge">
+                            ChromaDB
+                        </span>
+
+                        <span class="skill-badge">
+                            LLM APIs
+                        </span>
+
+                        <span class="skill-badge">
+                            Prompt Workflows
+                        </span>
+
+                        <span class="skill-badge">
+                            LLM-assisted Parsing
+                        </span>
+
+                        <span class="skill-badge">
+                            Basic Agent Workflows
+                        </span>
+
                     </div>
+
                 </div>
-                <div class="skills-group" data-reveal>
-                    <span class="skills-label">Tools</span>
+
+
+
+                <!-- Engineering -->
+                <div
+                    class="skills-group"
+                    data-reveal
+                >
+
+                    <span class="skills-label">
+                        Engineering
+                    </span>
+
+
                     <div class="skill-badges-row">
-                        <span class="skill-badge">Excel (advanced)</span>
-                        <span class="skill-badge">Power BI</span>
-                        <span class="skill-badge">Microsoft 365</span>
+
+                        <span class="skill-badge">
+                            Docker
+                        </span>
+
+                        <span class="skill-badge">
+                            Docker Compose
+                        </span>
+
+                        <span class="skill-badge">
+                            Git
+                        </span>
+
+                        <span class="skill-badge">
+                            GitHub
+                        </span>
+
+                        <span class="skill-badge">
+                            REST APIs
+                        </span>
+
+                        <span class="skill-badge">
+                            pytest
+                        </span>
+
                     </div>
+
                 </div>
-                <div class="skills-group" data-reveal>
-                    <span class="skills-label">Languages</span>
+
+
+
+                <!-- Analytics -->
+                <div
+                    class="skills-group"
+                    data-reveal
+                >
+
+                    <span class="skills-label">
+                        Analytics
+                    </span>
+
+
                     <div class="skill-badges-row">
-                        <span class="skill-badge">English (fluent, IELTS 7)</span>
-                        <span class="skill-badge">French (A2)</span>
-                        <span class="skill-badge">Tamil (native)</span>
+
+                        <span class="skill-badge">
+                            Statistical Analysis
+                        </span>
+
+                        <span class="skill-badge">
+                            Fuzzy Matching
+                        </span>
+
+                        <span class="skill-badge">
+                            Anomaly Detection
+                        </span>
+
+                        <span class="skill-badge">
+                            Monte Carlo Simulation
+                        </span>
+
+                        <span class="skill-badge">
+                            Power BI
+                        </span>
+
+                        <span class="skill-badge">
+                            Excel
+                        </span>
+
                     </div>
+
                 </div>
+
+
+
+                <!-- Currently Learning -->
+                <div
+                    class="skills-group"
+                    data-reveal
+                >
+
+                    <span class="skills-label">
+                        Currently Learning
+                    </span>
+
+
+                    <div class="skill-badges-row">
+
+                        <span class="skill-badge">
+                            AI Engineering
+                        </span>
+
+                        <span class="skill-badge">
+                            LangChain
+                        </span>
+
+                        <span class="skill-badge">
+                            LangGraph
+                        </span>
+
+                        <span class="skill-badge">
+                            MCP
+                        </span>
+
+                        <span class="skill-badge">
+                            AI Automation
+                        </span>
+
+                        <span class="skill-badge">
+                            LLM Inference
+                        </span>
+
+                        <span class="skill-badge">
+                            AI Infrastructure
+                        </span>
+
+                        <span class="skill-badge">
+                            Sustainable Computing
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Languages -->
+                <div
+                    class="skills-group"
+                    data-reveal
+                >
+
+                    <span class="skills-label">
+                        Languages
+                    </span>
+
+
+                    <div class="skill-badges-row">
+
+                        <span class="skill-badge">
+                            English — Fluent, IELTS 7
+                        </span>
+
+                        <span class="skill-badge">
+                            French — A2
+                        </span>
+
+                        <span class="skill-badge">
+                            Tamil — Native
+                        </span>
+
+                    </div>
+
+                </div>
+
+
             </div>
+
+
+
+            <!-- =================================================
+                 ADDITIONAL CERTIFICATIONS
+            ================================================== -->
+
+            <h3 class="skills-heading">
+                Additional Certifications
+            </h3>
+
+
+            <div class="cert-grid">
+
+
+                <!-- Certification 1 -->
+                <div
+                    class="cert-card"
+                    data-reveal
+                >
+
+                    <div class="cert-icon">
+
+                        <svg
+                            width="28"
+                            height="28"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                        >
+                            <path d="M12 15c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/>
+                            <path d="M8.5 8.5l2 2 4-4"/>
+                            <path d="M12 15v7"/>
+                        </svg>
+
+                    </div>
+
+
+                    <h3 class="cert-name">
+                        Forensic Accounting and Fraud Examination
+                    </h3>
+
+
+                    <p class="cert-issuer">
+                        West Virginia University — Coursera
+                    </p>
+
+
+                    <span class="cert-date">
+                        Jul 2026
+                    </span>
+
+                </div>
+
+
+
+                <!-- Certification 2 -->
+                <div
+                    class="cert-card"
+                    data-reveal
+                >
+
+                    <div class="cert-icon">
+
+                        <svg
+                            width="28"
+                            height="28"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                        >
+                            <path d="M12 15c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/>
+                            <path d="M8.5 8.5l2 2 4-4"/>
+                            <path d="M12 15v7"/>
+                        </svg>
+
+                    </div>
+
+
+                    <h3 class="cert-name">
+                        Financial Accounting Fundamentals
+                    </h3>
+
+
+                    <p class="cert-issuer">
+                        University of Virginia, Darden — Coursera
+                    </p>
+
+
+                    <span class="cert-date">
+                        Jul 2026
+                    </span>
+
+                </div>
+
+
+
+                <!-- Certification 3 -->
+                <div
+                    class="cert-card"
+                    data-reveal
+                >
+
+                    <div class="cert-icon">
+
+                        <svg
+                            width="28"
+                            height="28"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                        >
+                            <path d="M12 15c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/>
+                            <path d="M8.5 8.5l2 2 4-4"/>
+                            <path d="M12 15v7"/>
+                        </svg>
+
+                    </div>
+
+
+                    <h3 class="cert-name">
+                        Foundations: Data, Data, Everywhere
+                    </h3>
+
+
+                    <p class="cert-issuer">
+                        Google — Coursera
+                    </p>
+
+
+                    <span class="cert-date">
+                        Mar 2026
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
         </div>
+
     </section>
 
-    <!-- ============ CONTACT ============ -->
-    <section id="contact" class="section">
+
+
+    <!-- =========================================================
+         CONTACT
+    ========================================================== -->
+
+    <section
+        id="contact"
+        class="section section-alt"
+    >
+
         <div class="container">
+
+
             <h2 class="section-title">
-                <span class="section-num">05</span>
-                <span>Contact</span>
+
+                <span class="section-num">
+                    06
+                </span>
+
+                <span>
+                    Contact
+                </span>
+
             </h2>
+
+
+
             <div class="contact-grid">
+
+
                 <div class="contact-info">
-                    <h3 class="contact-heading">Let's talk</h3>
+
+
+                    <h3 class="contact-heading">
+                        Let's connect
+                    </h3>
+
+
                     <p class="contact-text">
-                        Seeking an internship in financial analysis, risk, regulatory reporting,
-                        or compliance technology. If your team needs someone who understands both
-                        data and finance &mdash; I'd love to hear from you.
+                        I'm currently looking for an internship where I can
+                        contribute to practical data and AI projects while
+                        developing deeper experience in applied AI, automation,
+                        AI systems and sustainable computing.
+                        If you're working on interesting problems involving
+                        data-intensive systems, Generative AI or efficient AI
+                        technologies, I'd be happy to connect.
                     </p>
+
+
+
                     <div class="contact-details">
-                        <a href="mailto:ranjithprasath2@gmail.com" class="contact-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+
+
+                        <!-- Email -->
+                        <a
+                            href="mailto:ranjithprasath2@gmail.com"
+                            class="contact-link"
+                        >
+
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <path d="M22 6l-10 7L2 6"/>
+                            </svg>
+
                             ranjithprasath2@gmail.com
+
                         </a>
-                        <a href="https://linkedin.com/in/ranjithprasath" target="_blank" rel="noopener" class="contact-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+
+
+
+                        <!-- LinkedIn -->
+                        <a
+                            href="https://linkedin.com/in/ranjithprasath"
+                            target="_blank"
+                            rel="noopener"
+                            class="contact-link"
+                        >
+
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+
                             linkedin.com/in/ranjithprasath
+
                         </a>
-                        <a href="https://github.com/Ranjith-Prasath/revenU" target="_blank" rel="noopener" class="contact-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                            github.com/Ranjith-Prasath/revenU
+
+
+
+                        <!-- GitHub -->
+                        <a
+                            href="https://github.com/Ranjith-Prasath"
+                            target="_blank"
+                            rel="noopener"
+                            class="contact-link"
+                        >
+
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+
+                            github.com/Ranjith-Prasath
+
                         </a>
+
+
+
+                        <!-- Location -->
                         <div class="contact-location">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 4 6 4 10c0 4 2 6 4 8 1 1 1.5 2 1.5 3.5"/><path d="M12 2c4 0 8 4 8 8 0 4-2 6-4 8-1 1-1.5 2-1.5 3.5"/><circle cx="12" cy="12" r="2"/></svg>
+
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path d="M12 2C8 2 4 6 4 10c0 4 2 6 4 8 1 1 1.5 2 1.5 3.5"/>
+                                <path d="M12 2c4 0 8 4 8 8 0 4-2 6-4 8-1 1-1.5 2-1.5 3.5"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+
                             Ottignies-Louvain-la-Neuve, Belgium
+
                         </div>
-                        <a href="assets/Ranjith_Resume.pdf" download class="btn btn-resume contact-resume-btn">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+
+
+
+                        <!-- Resume -->
+                        <a
+                            href="assets/Ranjith_Resume.pdf"
+                            download
+                            class="btn btn-resume contact-resume-btn"
+                        >
+
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                <path d="M7 10l5 5 5-5"/>
+                                <path d="M12 15V3"/>
+                            </svg>
+
                             Download Resume (PDF)
+
                         </a>
+
+
                     </div>
+
                 </div>
 
-                <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="contact" />
+
+
+                <!-- =================================================
+                     NETLIFY CONTACT FORM
+                ================================================== -->
+
+                <form
+                    class="contact-form"
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                >
+
+                    <input
+                        type="hidden"
+                        name="form-name"
+                        value="contact"
+                    >
+
+
                     <p class="hidden">
-                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+
+                        <label>
+                            Don't fill this out if you're human:
+
+                            <input name="bot-field">
+                        </label>
+
                     </p>
+
+
+
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your name" />
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            placeholder="Your name"
+                        >
+
                     </div>
+
+
+
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="you@example.com"
+                        >
+
                     </div>
+
+
+
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="What would you like to discuss?"></textarea>
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                            placeholder="What would you like to discuss?"
+                        ></textarea>
+
                     </div>
-                    <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary form-submit"
+                    >
+                        Send Message
+                    </button>
+
+
                 </form>
+
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- ============ FOOTER ============ -->
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
     <footer class="footer">
+
         <div class="container footer-content">
-            <p class="footer-name">Ranjith Prasath M V</p>
-            <p class="footer-text">Built with HTML, CSS &amp; vanilla JS</p>
-            <p class="footer-text">&copy; 2026 Ranjith Prasath M V. All rights reserved.</p>
+
+            <p class="footer-name">
+                Ranjith Prasath M V
+            </p>
+
+            <p class="footer-text">
+                Data Science • GenAI • Sustainable Computing
+            </p>
+
+            <p class="footer-text">
+                Built with HTML, CSS &amp; vanilla JavaScript
+            </p>
+
+            <p class="footer-text">
+                &copy; 2026 Ranjith Prasath M V. All rights reserved.
+            </p>
+
         </div>
+
     </footer>
 
-    <!-- ══ LIGHTBOX ═══════════════════════════════════════════ -->
-    <div class="lightbox" id="lightbox" hidden>
+
+
+    <!-- =========================================================
+         IMAGE LIGHTBOX
+    ========================================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        hidden
+    >
+
         <div class="lightbox-backdrop"></div>
-        <button class="lightbox-close" aria-label="Close">&times;</button>
-        <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
-        <img class="lightbox-img" src="" alt="">
-        <button class="lightbox-next" aria-label="Next">&#8250;</button>
+
+
+        <button
+            class="lightbox-close"
+            aria-label="Close"
+        >
+            &times;
+        </button>
+
+
+        <button
+            class="lightbox-prev"
+            aria-label="Previous"
+        >
+            &#8249;
+        </button>
+
+
+        <img
+            class="lightbox-img"
+            src=""
+            alt=""
+        >
+
+
+        <button
+            class="lightbox-next"
+            aria-label="Next"
+        >
+            &#8250;
+        </button>
+
+
         <p class="lightbox-caption"></p>
+
     </div>
 
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
     <script src="js/main.js"></script>
+
+
 </body>
+
 </html>
